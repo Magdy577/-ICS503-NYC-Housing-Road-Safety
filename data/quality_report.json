@@ -1,0 +1,67 @@
+{
+  "source_urls": {
+    "housing": "https://data.cityofnewyork.us/d/hg8x-zxpr",
+    "transport": "https://data.cityofnewyork.us/d/xeqp-qz8h"
+  },
+  "period": "2022\u20132025",
+  "housing_raw": {
+    "dataset": "Affordable Housing Production by Building",
+    "rows": 9551,
+    "columns": 41,
+    "duplicate_full_rows": 0,
+    "null_percentage_top_10": {
+      "_6_br_units": 99.72,
+      "_5_br_units": 99.24,
+      "_4_br_units": 94.13,
+      "unknown_br_units": 92.79,
+      "other_income_units": 85.76,
+      "moderate_income_units": 82.26,
+      "extremely_low_income_units": 78.21,
+      "middle_income_units": 71.82,
+      "counted_homeownership_units": 71.42,
+      "studio_units": 66.52
+    }
+  },
+  "transport_raw": {
+    "dataset": "Serious Injury Response, Tracking & Analysis Program",
+    "rows": 13754,
+    "columns": 23,
+    "duplicate_full_rows": 3,
+    "null_percentage_top_10": {
+      "highway_reference_marker": 92.35,
+      "address": 81.26,
+      "bin": 79.74,
+      "bbl": 79.74,
+      "census_tract_2020_": 71.88,
+      "neighborhood_tabulation_area_nta_2020_": 71.88,
+      "council_district": 71.86,
+      "community_board": 71.86,
+      "zipcode": 41.31,
+      "cross_street": 41.02
+    }
+  },
+  "housing_cleaning": {
+    "input": 9551,
+    "exact_duplicates_removed": 0,
+    "iqr_flagged_units_not_deleted": 1249,
+    "invalid_or_out_of_scope_removed": 6289,
+    "output": 3262,
+    "granularity": "building-project record (repeated buildings across separate projects remain valid)"
+  },
+  "transport_cleaning": {
+    "input": 13754,
+    "exact_duplicates_removed": 3,
+    "invalid_or_out_of_scope_removed": 1829,
+    "output": 11922,
+    "granularity": "SIRTA record; NOT all NYC crashes, and not population-adjusted risk"
+  },
+  "join_audit": {
+    "housing_borough_year_groups": 20,
+    "transport_borough_year_groups": 20,
+    "matched": 20,
+    "housing_only": 0,
+    "transport_only": 0,
+    "integrated_rows_after_post_clean": 20,
+    "key_duplicates_after_join": 0
+  }
+}

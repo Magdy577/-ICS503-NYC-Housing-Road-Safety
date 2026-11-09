@@ -1,0 +1,25 @@
+To: ICS503Data@gmail.com
+Subject: ICS503 Milestone 1 Submission — [Group/Section]
+
+Dear Dr. Nada Sharaf and Teaching Assistants,
+
+Please find our Data Engineering and Visualization Milestone 1 submission details below.
+
+Team member names and IDs:
+1. [Full name — ID]
+2. [Full name — ID]
+3. [Full name — ID]
+4. [Full name — ID]
+5. [Optional]
+6. [Optional]
+
+GitHub Repository: [INSERT WORKING LINK]
+Deployed Interactive Website: [INSERT TESTED LIVE LINK]
+
+Housing dataset: https://data.cityofnewyork.us/d/hg8x-zxpr
+Transportation dataset: https://data.cityofnewyork.us/d/xeqp-qz8h
+
+The repository contains our notebook, cleaned and integrated data, website source code, README, and documented individual contributions.
+
+Best regards,
+[Group representative]
